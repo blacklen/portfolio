@@ -189,6 +189,10 @@ footer {
 }
 
 @media(max-width: 550px) {
+	#navbar {
+		justify-content: center;
+	}
+	
 	#about {
 		flex-direction: column;
 	}
