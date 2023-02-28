@@ -1,56 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <title>Responsive Web Design Projects - Build a Personal Portfolio Webpage</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<title>Jane's Portfolio</title>
 </head>
 
 <body>
-    <header>
-        <nav id="navbar">
-            <a href="#welcome-section" class="nav-link">About</a>
-            <a href="#projects" class="nav-link">Work</a>
-            <a href="#contacts" class="nav-link">Contact</a>
-        </nav>
-    </header>
+	<header>
+		<nav id="navbar">
+				<a href="#about" class="nav__link">About</a>
+				<a href="#projects" class="nav__link">Project</a>
+				<a href="#contacts" class="nav__link">Contact</a>
+		</nav>
+	</header>
 
-    <main>
-        <section id="welcome-section" class="main-section">
-            <h1>Hey i'am Jane.</h1>
-            <p>a web developer</p>
-        </section>
+	<main>
+			<section id="welcome">
+					<h1>Hey i'am Jane.</h1>
+					<p>a software engineer</p>
+			</section>
 
-        <section id="projects" class="main-section">
-            <h1>These are some of my projects..</h1>
-            <div id="projects-content">
-                <a href="https://gendom.herokuapp.com" target="_blank" class="project-tile"><img src="https://user-images.githubusercontent.com/31103446/89856422-71a58500-dbc3-11ea-88a3-2ad8e89cd513.PNG">Gendom</a>
-                <a href="https://stumbling.herokuapp.com" target="_blank" class="project-tile"><img src="https://user-images.githubusercontent.com/31103446/89856425-72d6b200-dbc3-11ea-822c-619086c97e9b.PNG">Stumbling</a>
-                <a href="https://github.com/blacklen/fungag" target="_blank" class="project-tile"><img src="https://user-images.githubusercontent.com/31103446/89856367-46229a80-dbc3-11ea-80c0-24072ed8c929.jpg">Fungag</a>
-                <a href="https://github.com/blacklen/fruits-search" target="_blank" class="project-tile"><img src="https://user-images.githubusercontent.com/31103446/89856483-94d03480-dbc3-11ea-8fce-30a163588599.jpg">Fruit Search</a>
-            </div>
-            <a href="https://github.com/blacklen/" target="_blank" id="show-all">show all</a>
-        </section>
+			<section id="about">
+					<div class="about__intro">
+							<h1>ABOUT</h1>
+							<p>I am a girl with a logic mind so I've dedicated my life to it</p>
+							<p>I graduated from the Posts and Telecommunications Institute of Technology with a bachelor's degree in technology and nearly 4 years of experience in web development</p>
+							<p>My favorite programming language is JavaScript, which I am very comfortable with</p>
+							<p>I'm confident in my ability to learn new techniques quickly</p>
+					</div>
+					<div class="about__content">
+							<div class="about__quote">Highly adaptable person trying to make a better one</div>
+							<div class="about__img"></div>
+					</div>
+			</section>
 
-        <section id="contacts" class="main-section">
-            <h1>Let's work together...</h1>
-            <br/>
-            <div id="contacts-content">
-                <div id="fcbk"><a href="https://www.linkedin.com/in/huong-ta-jane-860a25143/" target="_blank">Linkedin</a></div>
-                <div id="github"><a href="https://github.com/blacklen/" target="_blank" id="profile-link">GitHub</a></div>
-                <div id="email"><a href="mailto:huong.jane17@gmail.com" target="_blank">Send a mail</a></div>
-            </div>
-        </section>
-    </main>
+			<section id="projects">
+					<h1>These are some of my projects..</h1>
+					<div class="projects__content">
+							<div class="project">
+									<img
+										class="project__img"
+										src="https://user-images.githubusercontent.com/31103446/221781698-757ede7f-3ef0-4538-83f5-3232e92e636c.png"
+									/>
+									<a href="https://ownego.github.io/polaris-vue" target="_blank" class="project__title">
+											Polaris Vue
+									</a>
+							</div>
 
-    <footer>
-        <p>© Created by Jane 2023</p>
-    </footer>
+							<div class="project project--right">
+									<img
+										class="project__img"
+										src="https://user-images.githubusercontent.com/31103446/89856425-72d6b200-dbc3-11ea-822c-619086c97e9b.PNG"
+									/>
+									<a href="https://stumbling.herokuapp.com" target="_blank" class="project__title">
+											Stumbling
+									</a>
+							</div>
+
+							<div class="project">
+									<img
+										class="project__img"
+										src="https://user-images.githubusercontent.com/31103446/89856367-46229a80-dbc3-11ea-80c0-24072ed8c929.jpg"
+									/>
+									<a href="https://github.com/blacklen/fungag" target="_blank" class="project__title">
+											Fungag
+									</a>
+							</div>
+
+							<div class="project project--right">
+									<img
+										class="project__img"
+										src="https://user-images.githubusercontent.com/31103446/89856483-94d03480-dbc3-11ea-8fce-30a163588599.jpg"
+									/>
+									<a href="https://github.com/blacklen/fruits-search" target="_blank" class="project__title">
+											Fruit Search
+									</a>
+							</div>
+					</div>
+					<a href="https://github.com/blacklen/" target="_blank" class="show-all">...</a>
+			</section>
+
+			<section id="contacts">
+					<h1>Let's work together...</h1>
+					<div class="contacts-content">
+							<div>
+								<a href="https://www.linkedin.com/in/huong-ta-jane-860a25143/" target="_blank">Linkedin</a>
+							</div>
+							<div>
+								<a href="https://github.com/blacklen/" target="_blank">GitHub</a>
+							</div>
+							<div>
+								<a href="mailto:huong.jane17@gmail.com" target="_blank">Send a mail</a>
+							</div>
+					</div>
+			</section>
+	</main>
+
+	<footer>
+			<p>© Created by Jane 2023</p>
+	</footer>
 </body>
 
 </html>
