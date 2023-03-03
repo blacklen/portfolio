@@ -18,6 +18,10 @@ body {
 	padding: 0px;
 }
 
+#welcome {
+	margin: 0;
+}
+
 #navbar {
 	position: fixed;
 	top: 0;
@@ -192,7 +196,7 @@ footer {
 	#navbar {
 		justify-content: center;
 	}
-	
+
 	#about {
 		flex-direction: column;
 	}
