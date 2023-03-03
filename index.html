@@ -102,7 +102,7 @@
 	<footer>
 			<p>© Created by Jane 2023</p>
 	</footer>
-	
+
 	<script>
 		window.addEventListener('DOMContentLoaded', () => {
 			const navLinks = document.getElementsByClassName('nav__link');
@@ -110,7 +110,8 @@
 				for (let element of navLinks) {
 					element.addEventListener('click', e => {
 						const hash = e.target.hash;
-						window.scrollTo(0, document.querySelector(hash).offsetTop);
+						e.preventDefault();
+						window.scrollTo(0, document.querySelector(hash).offsetTop - 100);
 					})
 				}
 			}
