@@ -104,4 +104,18 @@
 	</footer>
 </body>
 
+<script>
+	window.addEventListener('DOMContentLoaded', () => {
+		const navLinks = document.getElementsByClassName('nav__link');
+		if (navLinks) {
+			for (let element of navLinks) {
+				element.addEventListener('click', e => {
+					const hash = e.target.hash;
+					window.scrollTo(0, document.querySelector(hash).offsetTop);
+				})
+			}
+		}
+	});
+</script>
+
 </html>
