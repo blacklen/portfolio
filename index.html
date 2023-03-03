@@ -102,20 +102,19 @@
 	<footer>
 			<p>© Created by Jane 2023</p>
 	</footer>
-</body>
-
-<script>
-	window.addEventListener('DOMContentLoaded', () => {
-		const navLinks = document.getElementsByClassName('nav__link');
-		if (navLinks) {
-			for (let element of navLinks) {
-				element.addEventListener('click', e => {
-					const hash = e.target.hash;
-					window.scrollTo(0, document.querySelector(hash).offsetTop);
-				})
+	
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			const navLinks = document.getElementsByClassName('nav__link');
+			if (navLinks) {
+				for (let element of navLinks) {
+					element.addEventListener('click', e => {
+						const hash = e.target.hash;
+						window.scrollTo(0, document.querySelector(hash).offsetTop);
+					})
+				}
 			}
-		}
-	});
-</script>
-
+		});
+	</script>
+</body>
 </html>
